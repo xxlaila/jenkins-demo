@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: jenkins-demo
-  namespace: kube-public
+  namespace: kube-test
 spec:
   template:
     metadata:
