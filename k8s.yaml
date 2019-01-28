@@ -13,3 +13,5 @@ spec:
       - image: xxlaila/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
+        - name: branch
+          value: <BRANCH_NAME>
