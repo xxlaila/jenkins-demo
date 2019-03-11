@@ -1,4 +1,4 @@
-node('haimaxy-jnlp') {
+node('build-jnlp') {
     stage('Prepare') {
         echo "1.Prepare Stage"
         checkout scm
