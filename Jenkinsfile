@@ -5,8 +5,8 @@ node('agent-jnlp') {
         for( String JOB_NAME : JOB )
         println(JOB_NAME);  
 
-        def JOB_NAME= JOB_NAME.substring(JOB_NAME.lastIndexOf("/"), JOB_NAME.length())
-        println JOB_NAME[-2]
+        def JOB_NAME= JOB_NAME.substring(JOB_NAME.lastIndexOf("/"))
+        println (JOB_NAME.length(-))
 
         echo "it's ok"
         def log = "Exception on saving user with username:johntheripper"  
