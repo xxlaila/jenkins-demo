@@ -5,8 +5,8 @@ node('agent-jnlp') {
         for( String JOB_NAME : JOB )
         println(JOB_NAME);  
 
-        def JOB_NAMEbeginIndex = JOB_NAME.substring(JOB_NAME.indexOF("/"))
-        println JOB_NAMEbeginIndex //JOB_NAME
+        def JOB_NAMEWithoutBeginIndex= JOB_NAME.substring(JOB_NAME.indexOF("/"))
+        println JOB_NAMEWithoutBeginIndex //JOB_NAME
 
         echo "it's ok"
         def log = "Exception on saving user with username:johntheripper"  
