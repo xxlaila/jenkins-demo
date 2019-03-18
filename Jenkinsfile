@@ -3,10 +3,10 @@ node('agent-jnlp') {
         echo "${JOB_NAME}"
         JOB = JOB_NAME.split('/');
         for( String JOB_NAME : JOB )
-        println(JOB_NAME.[1]);  
+        println(JOB_NAME);  
 
-        def JOB_NAME= JOB_NAME
-        println (JOB_NAME.endsWith("/")) //JOB_NAME
+        def JOB_NAME= "JOB_NAME"
+        println JOB_NAME[0..-1]
 
         echo "it's ok"
         def log = "Exception on saving user with username:johntheripper"  
