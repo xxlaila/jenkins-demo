@@ -6,7 +6,7 @@ node('agent-jnlp') {
         println(JOB_NAME);  
 
         def JOB_NAME= JOB_NAME.substring(JOB_NAME.lastIndexOf("/"))
-        println JOB_NAME[0]
+        println JOB_NAME[-1]
 
         echo "it's ok"
         def log = "Exception on saving user with username:johntheripper"  
