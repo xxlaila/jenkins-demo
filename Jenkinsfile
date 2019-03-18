@@ -3,7 +3,7 @@ node('agent-jnlp') {
         echo "${JOB_NAME}"
         JOB = JOB_NAME.split('/');
         for( String JOB_NAME : JOB )
-        println(JOB_NAME.items[0]);  
+        println(JOB_NAME[0]);  
 
         def JOB_NAME = JOB_NAME.substring(JOB_NAME.lastIndexOf("/") - 0)
         println JOB_NAME //JOB_NAME
