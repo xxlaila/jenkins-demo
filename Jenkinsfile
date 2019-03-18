@@ -1,4 +1,4 @@
-node('build-jnlp') {
+node('agent-jnlp') {
     stage('Prepare') {
         echo "${JOB_NAME}"
     }
