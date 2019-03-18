@@ -5,7 +5,7 @@ node('agent-jnlp') {
         for( String JOB_NAME : JOB )
         println(JOB_NAME);  
 
-        def JOB_NAME= JOB_NAME.substring(JOB_NAME.lastIndexOf("/"))
+        def JOB_NAME= JOB_NAME.substring(JOB_NAME.lastIndexOf("/"), JOB_NAME.length())
         println JOB_NAME[-150]
 
         echo "it's ok"
